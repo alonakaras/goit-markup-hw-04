@@ -14,7 +14,7 @@
   --logo-header-studio-color: #2e2f42;
   --main-padding: 120px 0;
 }
-/* ---------------- base styles--------------- */
+/* ---------------- base styles --------------- */
 body {
   font-family: Roboto, sans-serif;
   font-size: 16px;
@@ -30,6 +30,11 @@ h5,
 h6,
 p {
   margin: 0;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 .visually-hidden {
   position: absolute;
@@ -232,12 +237,22 @@ p {
   color: var(--footer-desc-color);
   width: 264px;
 }
+
 /* --------main page hero section styles----------------------- */
 .hero-container {
 }
+
 .hero {
   background-color: var(--hero-footer-backgroud-color);
   padding: 188px 0;
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/hero/heroback.jpg);
+  background-repeat: no-repeat;
+  max-width: 1440px;
+  margin: 0 auto;
 }
 .hero-title {
   font-weight: 700;
@@ -273,6 +288,7 @@ p {
 }
 
 /* ---------main page philosophy section styles------------------ */
+
 .philosophy-container {
 }
 .philosophy {
@@ -283,6 +299,19 @@ p {
   gap: 24px;
 }
 .philosophy-list-item {
+}
+.icon:hover {
+  fill: #404bbf;
+}
+.philosophy-list-rect {
+  width: 264px;
+  height: 112px;
+  background: var(--logo-footer-studio-color);
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 8px;
 }
 .philosophy-item-title {
   font-weight: 500;
@@ -343,6 +372,9 @@ p {
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
   border-radius: 0px 0px 4px 4px;
 }
+.team-container {
+  padding: 32px 0;
+}
 .team-item-title {
   font-weight: 500;
   font-size: 20px;
@@ -353,13 +385,76 @@ p {
 }
 .team-item-desc {
   color: var(--secondary-title-color);
+  margin-bottom: 8px;
+}
+.socials {
+  display: flex;
+  gap: 24px;
 }
 
-img {
-  display: block;
-  max-width: 100%;
-  height: auto;
+.socials-item {
 }
-.team-container {
-  padding: 32px 0;
+
+.socials-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: var(--accent-color);
+}
+.socials-link:hover {
+  background-color: var(--link-hover-color);
+}
+.socials-title {
+  font-weight: 500;
+  color: var(--hero-title-color);
+  margin-bottom: 16px;
+}
+.footer-social {
+  padding-left: 120px;
+}
+.footer {
+}
+.footer-container {
+  display: flex;
+}
+
+.customers {
+  padding: var(--main-padding);
+}
+.container {
+}
+.customers-title {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 0.9;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+}
+.customers-list {
+  display: flex;
+  gap: 24px;
+}
+.list {
+}
+.customers-list-item {
+}
+
+.customers-list-link {
+  fill: #8e8f99;
+}
+
+.customers-list-rect {
+  width: 168px;
+  height: 88px;
+  border: 1px solid #8e8f99;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 72px;
 }

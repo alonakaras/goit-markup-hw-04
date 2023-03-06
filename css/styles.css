@@ -439,6 +439,7 @@ img {
   display: flex;
   gap: 24px;
 }
+
 .list {
 }
 .customers-list-item {
@@ -446,6 +447,9 @@ img {
 
 .customers-list-link {
   fill: #8e8f99;
+}
+.customers-list-link:hover {
+  color: #404bbf;
 }
 
 .customers-list-rect {

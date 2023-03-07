@@ -447,14 +447,24 @@ img {
 
 .customers-list-link {
   fill: #8e8f99;
+  border: 1px solid #8e8f99;
+  border-radius: 4px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 72px;
+  width: 168px;
+  height: 88px;
 }
 .customers-list-link:hover {
   fill: var(--link-hover-color);
+  border-color: var(--link-hover-color);
 }
 .customers-list-link:focus {
 }
 
-.customers-list-rect {
+/* .customers-list-rect {
   box-sizing: border-box;
   width: 168px;
   height: 88px;
@@ -469,4 +479,4 @@ img {
   color: var(--link-hover-color);
 }
 .customers-list-rect:focus {
-}
+} */

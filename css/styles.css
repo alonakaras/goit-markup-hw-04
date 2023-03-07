@@ -449,10 +449,13 @@ img {
   fill: #8e8f99;
 }
 .customers-list-link:hover {
-  color: #404bbf;
+  fill: var(--link-hover-color);
+}
+.customers-list-link:focus {
 }
 
 .customers-list-rect {
+  box-sizing: border-box;
   width: 168px;
   height: 88px;
   border: 1px solid #8e8f99;
@@ -461,4 +464,9 @@ img {
   justify-content: center;
   align-items: center;
   margin-top: 72px;
+}
+.customers-list-rect:hover {
+  color: var(--link-hover-color);
+}
+.customers-list-rect:focus {
 }

@@ -195,6 +195,15 @@ img {
 }
 .portfolio-card {
   text-decoration: none;
+  display: block;
+}
+.portfolio-card:hover {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+.portfolio-card:focus {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .portfolio-cards-img {
@@ -251,6 +260,8 @@ img {
     ),
     url(../images/hero/heroback.jpg);
   background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   max-width: 1440px;
   margin: 0 auto;
 }
@@ -389,6 +400,8 @@ img {
 }
 .socials {
   display: flex;
+  justify-content: center;
+  align-items: center;
   gap: 24px;
 }
 
@@ -407,6 +420,10 @@ img {
 .socials-link:hover {
   background-color: var(--link-hover-color);
 }
+.socials-link:focus {
+  background-color: var(--link-hover-color);
+}
+
 .socials-title {
   font-weight: 500;
   color: var(--hero-title-color);
@@ -419,6 +436,31 @@ img {
 }
 .footer-container {
   display: flex;
+}
+
+.footer-socials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+.footer-socials-item {
+}
+
+.footer-socials-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.footer-socials-link:hover {
+  background-color: #31d0aa;
+}
+.footer-socials-link:focus {
+  background-color: #31d0aa;
 }
 
 .customers {
@@ -434,6 +476,7 @@ img {
   text-align: center;
   letter-spacing: 0.02em;
   text-transform: capitalize;
+  margin-bottom: 72px;
 }
 .customers-list {
   display: flex;
@@ -453,7 +496,6 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 72px;
   width: 168px;
   height: 88px;
 }
@@ -462,6 +504,8 @@ img {
   border-color: var(--link-hover-color);
 }
 .customers-list-link:focus {
+  fill: var(--link-hover-color);
+  border-color: var(--link-hover-color);
 }
 
 /* .customers-list-rect {
